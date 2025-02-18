@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  frontend:
+    image: node:23-slim # Use official Node.js image
+    working_dir: /app
+    ports:
+      - "5173:5173" # Expose Vite's default port
+    volumes:
+      - ./go-talk:/app # Mount the /go-talk/ directory to the container's /app directory
+    environment:
+      - NODE_ENV=development
+      - VITE_HOST=0.0.0.0 # This ensures Vite binds to all interfaces
+
+    command: |
+      bash -c "
+        npm install -g pnpm && \
+        pnpm install && \
+        pnpm dev          
+      "
