@@ -20,7 +20,9 @@ jobs:
           npm install -g pnpm
 
       - name: Install dependencies
+        working-directory: ./go-talk
         run: pnpm install
 
       - name: Run linting (ESLint)
+        working-directory: ./go-talk
         run: pnpm run lint
