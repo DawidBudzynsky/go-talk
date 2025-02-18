@@ -1,0 +1,54 @@
+# Golang
+# Ignore binary and compiled files
+*.exe
+*.exe~
+*.out
+*.so
+*.dylib
+*.a
+*.o
+*.test
+# Ignore Go module files (only keep `go.mod` and `go.sum`)
+vendor/
+
+# React (with pnpm)
+# Node modules directory
+node_modules/
+# pnpm lock file (if you prefer to regenerate)
+pnpm-lock.yaml
+
+# Build output
+build/
+dist/
+
+# Next.js specific
+.next/
+out/
+
+# TailwindCSS
+# Tailwind does not create a separate folder, but just to be sure
+/public/css/
+
+# Redis data files
+# Ignore Redis database files (if you're running Redis locally)
+dump.rdb
+appendonly.aof
+
+# IDE / Editor directories
+.vscode/
+.idea/
+*.swp
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Other
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
