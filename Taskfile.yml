@@ -1,0 +1,20 @@
+version: "3"
+
+tasks:
+  # Task to bring up Docker containers
+  up:
+    cmds:
+      - docker-compose up -d
+    description: "Bring up Docker containers (frontend) in detached mode"
+
+  # Task to run frontend in dev mode using pnpm
+  dev:
+    cmds:
+      - pnpm dev
+    description: "Run frontend in dev mode"
+
+  # Task to bring down Docker containers
+  down:
+    cmds:
+      - docker-compose down
+    description: "Shut down Docker containers"
