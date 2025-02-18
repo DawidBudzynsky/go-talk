@@ -9,6 +9,7 @@ tasks:
 
   # Task to run frontend in dev mode using pnpm
   dev:
+    dir: go-talk
     cmds:
       - pnpm dev
     description: "Run frontend in dev mode"
