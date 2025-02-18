@@ -6,7 +6,7 @@ It uses **React** with **TypeScript** and **TailwindCSS** for the frontend, whil
 ---
 
 ## 📸 **Screenshot**
-![Screenshot of the Project](https://imgur.com/a/DbsnDWL)
+<img width="1680" alt="Image" src="https://github.com/user-attachments/assets/158893ed-57ce-45b9-b769-5d4e371503cc" />
 
 
 ## 🛠 **Technologies Used**
